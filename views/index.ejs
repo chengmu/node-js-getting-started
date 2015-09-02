@@ -1,13 +1,82 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>LeanEngine</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
-  </head>
-  <body>
-    <h1>LeanEngine</h1>
-    <p>这是 LeanEngine 的示例应用</p>
-    <p>当前时间：<%= currentTime %></p>
-    <p><a href="/todos">一个简单的「TODO 列表」示例</a></p>
-  </body>
+    <head>
+     <meta charset="utf-8" />
+     <link rel="stylesheet" href="http://chengmu.github.io/oldblog/styles/fontawesome.css" />
+     <link rel="stylesheet" href="stylesheets/style.css" />
+     <title>resume</title>
+    </head>
+    <body>
+      <div class="sidebar">
+        <h2>    <a id="user-content-朱琳" class="anchor" href="#%E6%9C%B1%E7%90%B3" aria-hidden="true"><span class="octicon octicon-link"></span></a>朱琳</h2>
+        <p>现就职于<strong>网易有道（北京）信息技术有限公司</strong></p>
+        <p><strong>Tel</strong>: 18511760027    <strong>Mail</strong> ：<a href="mailto:lin.zhu.ak@gmail.com">lin.zhu.ak@gmail.com</a></p>
+        <h2>    <a id="user-content-专业技能" class="anchor" href="#%E4%B8%93%E4%B8%9A%E6%8A%80%E8%83%BD" aria-hidden="true"><span class="octicon octicon-link"></span></a>专业技能</h2>
+        <ul>
+         <li>掌握<code>HTML</code>/<code>CSS</code>/<code>Javascript</code>等语言；熟悉<code>Node.js</code>平台开发，<code>npm</code>命令等；</li>
+         <li>掌握<code>webpack</code>/<code>gulp</code>/<code>grunt</code>/等工程工具；使用过<code>yeoman</code>/<code>bower</code>等等脚手架和包管理工具</li>
+         <li>熟悉<code>chrome dev tools</code>的使用，并在组内进行分享；使用过<code>weinre</code>/<code>adb</code>/<code>Xcode</code>/<code>Eclipse</code>/<code>Android Studio</code>/等等工具</li>
+         <li>对<code>Bootstrap</code>/<code>jQuery</code>/<code>Zepto</code>/<code>Underscore</code>/等工具库有一定经验</li>
+         <li>习惯使用<code>Sass</code>开发，使用过<code>Less</code>; 熟悉<code>icon font</code>的使用，在组内进行过推广</li>
+         <li>对<code>Backbone</code>/<code>Angular</code>/等有所经验和了解；研究过<code>express</code>框架；使用过<code>seajs</code>做以来管理</li>
+         <li>对<code>Ecmascript5.1</code>/<code>CMD</code>/<code>AMD</code>/<code>Promise</code>/<code>W3C HTML&amp;CSS相关</code>/<code>HTTP</code>规范有所了解</li>
+         <li>熟悉<strong>多端适配web开发</strong>, 有近两年hybrid混合开发模式经验, 有一定的Android和iOS webview调试能力</li>
+         <li>有<code>git</code>/<code>SVN</code>等版本管理工具经验；使用<code>git flow</code>模式进行开发</li>
+         <li>使用<code>eslint</code>/<code>JsHint</code>作为代码审查工具，并负责制定有道前端组代码规范</li>
+         <li>开发过微信公众服务号内应用；使用过微信JSSDK。</li>
+        </ul>
+      </div>
+      <div class="content">
+        <h2>    <a id="user-content-项目经验" class="anchor" href="#%E9%A1%B9%E7%9B%AE%E7%BB%8F%E9%AA%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a>项目经验</h2>
+      <h3>    <a id="user-content-hybrid-app混合模式开发" class="anchor" href="#hybrid-app%E6%B7%B7%E5%90%88%E6%A8%A1%E5%BC%8F%E5%BC%80%E5%8F%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hybrid APP（混合模式开发）</h3>
+      <em>    <a id="user-content-有道词典社区2015年初至今" class="anchor" href="#%E6%9C%89%E9%81%93%E8%AF%8D%E5%85%B8%E7%A4%BE%E5%8C%BA2015%E5%B9%B4%E5%88%9D%E8%87%B3%E4%BB%8A" aria-hidden="true"><span class="octicon octicon-link"></span></a>有道词典社区（2015年初至今）</em>
+      <p>担任项目管理人（scrum master）和前端开发主力。</p>
+      <p>一个工程，一份代码对接pcweb端、移动wap版、词典客户端Android&amp;iOS版本、口语大师Android&amp;iOS版本等所有版本。客户端内版本放在本地，由资源管理服务进行自动更新。</p>
+      <p>使用webpack进行依赖管理，并针对web版和hybrid版本做了两份入口，分别进行依赖打包。</p>
+      <p>使用gulp作为工程工具，所有构建、测试、上线均一行命令完成。</p>
+      <p>自行编写了命令行工具，自动发布CDN和推送资源到相应资源管理服务。</p>
+      <h5>    <a id="user-content-ydk全称youdao-dict-development-kit" class="anchor" href="#ydk%E5%85%A8%E7%A7%B0youdao-dict-development-kit" aria-hidden="true"><span class="octicon octicon-link"></span></a>YDK（全称：Youdao Dict Development Kit）</h5>
+      <p>统一前端和客户端（ Android 和 iOS ）通讯，同时定义和实现基础API，包括：音频、录音、图像、分享、网络请求管理等。</p>
+      <p>建构在 ydk 之上的项目，可兼容运行于 iOS webview、Android webview、手机浏览器 和 PC 浏览器中。</p>
+      <p>参与了该项目的初期设计和部分开发工作，持续跟进该工具的使用和完善。编写相应的测试用例作为与客户端进行联调之前的预先条件。</p>
+      <h4>    <a id="user-content-有道词典看天下信息流服务" class="anchor" href="#%E6%9C%89%E9%81%93%E8%AF%8D%E5%85%B8%E7%9C%8B%E5%A4%A9%E4%B8%8B%E4%BF%A1%E6%81%AF%E6%B5%81%E6%9C%8D%E5%8A%A1" aria-hidden="true"><span class="octicon octicon-link"></span></a>有道词典看天下信息流服务</h4>
+      <p>前端开发负责人。该项目为有道2014年度最佳项目，盈利颇多。</p>
+      <p>首次开始模板本地化，将所有加载页面需要的HTML、CSS、Js以及图片资源放在本地，大大提升了加载速度。</p>
+      <p>负责2015年的看天下全服务改版计划，包括编辑器（基于百度编辑器开发）&amp; 发布器、客户端内本地模板、PC &amp; wap版可访问的网页版服务。</p>
+      <h4>    <a id="user-content-有道词典评论系统" class="anchor" href="#%E6%9C%89%E9%81%93%E8%AF%8D%E5%85%B8%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F" aria-hidden="true"><span class="octicon octicon-link"></span></a>有道词典评论系统</h4>
+      <p>词典组通用评论模块。同时支持web版网页和客户端Hybrid版本。使用grunt进行构建，根据需求分别打包出web版所需资源和Hybrid版本本地化资源。</p>
+      <p>实现仅靠插入一个js即可生成评论模块组件；支持多方登陆评论；客户端内版本使用native接口进行数据请求和登陆。</p>
+      <h4>    <a id="user-content-有道词典pc客户端--新闻弹窗" class="anchor" href="#%E6%9C%89%E9%81%93%E8%AF%8D%E5%85%B8pc%E5%AE%A2%E6%88%B7%E7%AB%AF--%E6%96%B0%E9%97%BB%E5%BC%B9%E7%AA%97" aria-hidden="true"><span class="octicon octicon-link"></span></a>有道词典PC客户端 &amp; 新闻弹窗</h4>
+      <p>Windows词典客户端6.0版本，首个基于Hex(Chromium + Node.js)的纯前端实现所有可见界面的Windows客户端。数据等通过C++和js互调完成；所有界面均前端实现。</p>
+      <p>负责信息流加载逻辑、comboBox、翻译模块、查词结果页、百科等等核心业务。</p>
+      <h4>    <a id="user-content-有道词典移动客户端androidios" class="anchor" href="#%E6%9C%89%E9%81%93%E8%AF%8D%E5%85%B8%E7%A7%BB%E5%8A%A8%E5%AE%A2%E6%88%B7%E7%AB%AFandroidios" aria-hidden="true"><span class="octicon octicon-link"></span></a>有道词典移动客户端（Android&amp;iOS）</h4>
+      <p>负责查词结果页模板开发，包括通用词典、汉语词典、藏语词典等等； 基于汉语词典内部模版开发需求，搭建了一套模版开发系统，供快速开发模版，实现自动构建过程； 负责有道词典资料库电子书模板开发： 双语阅读、单词书、VOA听力书、通用查词组件等等，调用客户端接口实现功能</p>
+      <h3>    <a id="user-content-单页面应用single-page-application" class="anchor" href="#%E5%8D%95%E9%A1%B5%E9%9D%A2%E5%BA%94%E7%94%A8single-page-application" aria-hidden="true"><span class="octicon octicon-link"></span></a>单页面应用（Single Page Application）</h3>
+      <h4>    <a id="user-content-微信h5游戏开发-移动端" class="anchor" href="#%E5%BE%AE%E4%BF%A1h5%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91-%E7%A7%BB%E5%8A%A8%E7%AB%AF" aria-hidden="true"><span class="octicon octicon-link"></span></a>微信H5游戏开发 移动端</h4>
+      <p>搭建通用的游戏开发架构，实现单页面无刷新界面加载，保证之后可以在此基础上进行类似游戏的快速开发； 在此基础上开发过希望英语大赛游戏、惠惠猜价格等等游戏。</p>
+      <h4>    <a id="user-content-eattogether-微信公众号应用开发-饭团" class="anchor" href="#eattogether-%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91-%E9%A5%AD%E5%9B%A2" aria-hidden="true"><span class="octicon octicon-link"></span></a>EatTogether 微信公众号应用开发 饭团</h4>
+      <p>公司创新实验室项目；二等奖。基于LeadCloud服务，使用Angular.js开发的一个微信服务号内单页面应用。</p>
+      <h4>    <a id="user-content-惠惠购物助手浏览器插件开发" class="anchor" href="#%E6%83%A0%E6%83%A0%E8%B4%AD%E7%89%A9%E5%8A%A9%E6%89%8B%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E5%BC%80%E5%8F%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>惠惠购物助手（浏览器插件开发）</h4>
+      <p>负责比价增强等页面内插入组件的业务逻辑开发。</p>
+      <h5>    <a id="user-content-惠惠收藏夹" class="anchor" href="#%E6%83%A0%E6%83%A0%E6%94%B6%E8%97%8F%E5%A4%B9" aria-hidden="true"><span class="octicon octicon-link"></span></a>惠惠收藏夹</h5>
+      <p>基于<code>Backbone.js</code>开发的商品收藏应用。使用grunt脚本结合<code>velocity.js</code>实现本地vm模板渲染，绕开Java服务vm开发模式。</p>
+      <h4>    <a id="user-content-有道学堂四六级在线测试-移动版--web-版本" class="anchor" href="#%E6%9C%89%E9%81%93%E5%AD%A6%E5%A0%82%E5%9B%9B%E5%85%AD%E7%BA%A7%E5%9C%A8%E7%BA%BF%E6%B5%8B%E8%AF%95-%E7%A7%BB%E5%8A%A8%E7%89%88--web-%E7%89%88%E6%9C%AC" aria-hidden="true"><span class="octicon octicon-link"></span></a>有道学堂四六级在线测试 （移动版 &amp; web 版本）</h4>
+      <p>在线测试系统，支持多种提醒，同时实现移动wap版和桌面pc版本。</p>
+      <h4>    <a id="user-content-有道翻译译员系统-基于angularjs的富交互中英对照编辑器" class="anchor" href="#%E6%9C%89%E9%81%93%E7%BF%BB%E8%AF%91%E8%AF%91%E5%91%98%E7%B3%BB%E7%BB%9F-%E5%9F%BA%E4%BA%8Eangularjs%E7%9A%84%E5%AF%8C%E4%BA%A4%E4%BA%92%E4%B8%AD%E8%8B%B1%E5%AF%B9%E7%85%A7%E7%BC%96%E8%BE%91%E5%99%A8" aria-hidden="true"><span class="octicon octicon-link"></span></a>有道翻译译员系统 基于Angular.js的富交互中英对照编辑器</h4>
+      <h4>    <a id="user-content-cms系统模板开发" class="anchor" href="#cms%E7%B3%BB%E7%BB%9F%E6%A8%A1%E6%9D%BF%E5%BC%80%E5%8F%91" aria-hidden="true"><span class="octicon octicon-link"></span></a>cms系统模板开发</h4>
+      <h2>    <a id="user-content-研究--分享" class="anchor" href="#%E7%A0%94%E7%A9%B6--%E5%88%86%E4%BA%AB" aria-hidden="true"><span class="octicon octicon-link"></span></a>研究 &amp; 分享</h2>
+      <ul>
+       <li><a href="https://docs.google.com/presentation/d/1e0WjyABdRkp70odFJuc0dt4skKwI1U-XwORXgGUJbfY/edit?usp=sharing">Front End Misc (关于Front End Dev你可能需要知道的事情)</a></li>
+       <li><a href="http://chengmu.github.io/slides/slide_connect_express/">Express框架：如何使用Nodejs搭建网络服务</a></li>
+       <li>如何使用<code>font-face</code> &amp;    <code>Icon Font</code>的制作和使用</li>
+       <li>移动端开发：<code>viewport</code>    <code>dpi &amp; dp</code>    <code>Responsive Web Design</code>    <code>Jquery Mobile</code>    </li>
+       <li>    <code>GPU</code>加速原理: 浏览器加载过程，什么是<code>Composing</code><br />    </li>
+       <li>    <code>Chrome-Dev-Tools</code> 开发工具的使用<br />    </li>
+      </ul>
+      <h2>    <a id="user-content-教育信息" class="anchor" href="#%E6%95%99%E8%82%B2%E4%BF%A1%E6%81%AF" aria-hidden="true"><span class="octicon octicon-link"></span></a>教育信息</h2>
+      <p>2012年本科毕业于北京林业大学，专业为工商管理（经济信息管理方向）    </p>
+      </div>
+
+
+    </body>
 </html>
