@@ -1,27 +1,9 @@
-/**
- * 单个内容页面的基础样式
-** author: zhulin;
-** date : 2013-06-17;
- */
-
-/**
- * 文字默认颜色设成191919或者3a3a3a
-** 链接色设成5a5a5a
-** 高亮设成e34334
-** 描边用efefef，更高级别的用dedede
-** 背景灰色fafafa比较低的灰或者f5f5f5都可以
-** 通常比较简单的层次是，背景色1个，描边1个，文字两个+高亮
- */
-
 body{
     font-size: 15px;
-    line-height: 2em;
+    line-height: 1.8em;
     font-family: Consolas,Verdana, Lucas Conslole, Tahoma;
     color: #191919;
 }
-
-
-/*markdown 语法*/
 
 h1{
     font-size: 1.8em;
@@ -29,24 +11,38 @@ h1{
     margin: 0.2em 0 .1em;
     line-height: 1em;
 }
+
 h2{
     font-size: 1.5em;
     font-weight: bold;
     border-bottom: 1px solid rgb(238, 238, 238);
-    margin: 0.7em 0 .2em;
+    margin: 0.7em 0 ;
     padding: 0.3em 0;
 }
+
 h3{
     font-size: 1.3em;
     line-height: 2em;
     font-weight: bold;
     margin-top: 1em;
 }
+
 h4{
     font-size: 1.1em;
+    padding-left: 1em;
+}
+
+
+h4::before{
+    content:'★';
+    padding:0 0 0 10px;
+    color: rgb(139, 0, 0);
+    margin-right:1em;
+    font-size:1em;
+    position: absolute;
+    margin-left: -2em;
 }
 a{
-    /*color: #5a5a5a;*/
     color: #e34334;
     padding: 0.3em 0 0.1em;
     text-decoration: underline;
@@ -58,8 +54,9 @@ a:hover{
     background: #e34334;
     text-decoration: none;
 }
-em,strong{
+strong{
     font-weight: bold;
+    color: rgb(139, 0, 0);
 }
 
 
@@ -75,13 +72,20 @@ li{
     list-style-type: none;
     text-indent: 0;
 }
+ul{
+    padding-left: 0;
+}
+ul li{
+    display: inline-block;
+    padding: 0 0 0 1.5em;
+    margin-right: .5em;
+}
 
 li::before{
-    font-family: FontAwesome;
-    content:'\f13';
+    content:'❤';
+    color: rgb(139, 0, 0);
     padding:0 0 0 10px;
     margin-right:1em;
-    color: rgb(139,0,0);
     font-size:1em;
     position: absolute;
     margin-left: -2em;
@@ -92,9 +96,6 @@ p{
 }
 li p{
     text-indent:0;
-}
-p img{
-    vertical-align: bottom;
 }
 code{
     font-family: Consolas;
@@ -112,39 +113,5 @@ pre code{
     overflow-x: auto;
 }
 
-
- blockquote::before {
-    content: "\“";
-    position: absolute;
-    font-size: 60px;
-    left: -69px;
-    font-family: T;  font-weight: bold;  font-style: normal;
-    color: #5e5e5e;
-}
-blockquote {
-    text-indent: 30px;
-    position: relative;
-    font-family: cursive;
-    font-style: italic;
-}
-blockquote::after {
-    content: "\”";
-    font-size: 70px;
-    position: absolute;
-    right: -70px;
-    bottom: -18px;
-    font-family: T;
-    font-weight: bold;
-    font-style: normal;
-    color: #5e5e5e;
-}
-
-blockquote blockquote::before {
-  font-size: 40px;
-}
-
-blockquote blockquote::after {
-   font-size: 40px;
-}
 
 

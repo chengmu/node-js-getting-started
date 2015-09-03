@@ -1,7 +1,11 @@
 /**
  * 打印样式
  */
-
+@media print{
+    .print-tip{
+        display: none;
+    }
+}
 
 
 body{
