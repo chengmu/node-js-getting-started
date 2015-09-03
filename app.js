@@ -42,7 +42,15 @@ app.get('/', function(req, res) {
 });
 
 app.get('/cv', function (req, res) {
-  res.render('cv', {permission : req.query.key && req.query.key === 'yougotit'});
+  res.render('cv', {
+    permission : req.query.key && req.query.key === 'yougotit'
+  });
+})
+
+app.get('/cv_print', function (req, res) {
+  res.render('cv_print', {
+    permission : req.query.key && req.query.key === 'yougotit'
+  });
 })
 
 // 可以将一类的路由单独保存在一个文件中

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>简历</title>
+    <title>简历-打印版</title>
     <meta name="viewport" content="width=device-width">
     <!-- <link rel="stylesheet" href="/stylesheets/layout.css"> -->
     <!-- <link rel="stylesheet" href="/stylesheets/markdown.css"> -->
@@ -14,15 +14,10 @@
     document.body.className += (navigator.userAgent.indexOf('Mobile') !== -1 ? ' mobile' : 'pc')
 </script>
 <%if (permission) {%>
-    <div class="wrap">
-        <div class="side">
-            <%- include resume/side.html %>
-            <a href="./cv_print?key=yougotit&print=ucan">可打印版本</a>
-        </div>
-        <div class="content">
-            <%- include resume/content.html %>
-        </div>
+    <div class="print">
+        <%- include resume/print.html %>
     </div>
+
 <%} else {%>
     抱歉你好像没有权限看诶。。。
 <%}%>
