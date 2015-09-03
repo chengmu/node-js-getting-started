@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简历</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<%if (permission) {%>
+    <div class="side">
+        <%- include resume/side.html %>
+    </div>
+    <div>
+        <%- include resume/content.html %>
+    </div>
+<%} else {%>
+    抱歉你好像没有权限看诶。。。
+<%}%>
+</body>
+</html>

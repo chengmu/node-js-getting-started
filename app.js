@@ -41,6 +41,10 @@ app.get('/', function(req, res) {
   res.render('index', { currentTime: new Date() });
 });
 
+app.get('/cv', function (req, res) {
+  res.render('cv', {permission : req.query.key && req.query.key === 'yougotit'});
+})
+
 // 可以将一类的路由单独保存在一个文件中
 app.use('/todos', todos);
 
