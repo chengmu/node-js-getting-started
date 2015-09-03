@@ -22,11 +22,12 @@ body, p, h1, h2, h3, h4, h5{
 }
 
 /*窄桌面端布局*/
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .pc .wrap{
         background: rgba(250,250,250,.5);
         padding: 10px;
-        width: 80%;
+        width: 900px;
+        margin: 0 auto;
         min-width: initial;
         margin: 10px auto;
     }
